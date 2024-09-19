@@ -12,8 +12,16 @@ block content
       role="group",
       aria-label="External API Requests Examples"
     )
-      button(type="button", class="btn btn-primary") Get Public Message
-      button(type="button", class="btn btn-primary") Get Protected Message
+      button(
+        type="button",
+        class="btn btn-primary",
+        onclick="window.location='/external-api/public-message'"
+      ) Get Public Message
+      button(
+        type="button",
+        class="btn btn-primary",
+        onclick="window.location='/external-api/protected-message'"
+      ) Get Protected Message
 
     if message
       div(class="mt-5")
